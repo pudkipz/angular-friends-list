@@ -1,8 +1,6 @@
 <h2>Favorite people:</h2>
 @for (person of favoritePeople; track $index) {
   <p>{{person}}
-    <!-- @if (!favoritePeople.includes(person)) {
-      <button (click)="favoriteHandler.emit(person)">Favorite</button>
-    } -->
+    <button (click)="removeFavoriteHandler.emit(person)">Remove favorite</button>
   </p>
 }

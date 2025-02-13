@@ -22,4 +22,9 @@ export class AppComponent {
   setFavorite(person: string) {
     this.favoritePeople.push(person);
   }
+
+  removeFavorite(person: string) {
+    let index: number = this.favoritePeople.findIndex(p => p == person);
+    this.favoritePeople.splice(index, 1);
+  }
 }
