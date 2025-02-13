@@ -1,5 +1,7 @@
-button {
-    float: right;
-    margin-right: 1000px;
-    /* probably a better way to do that ^ */
+.people-card {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border: 1px solid #DDD;
+    justify-content: space-between;
 }
