@@ -7,5 +7,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class PeopleComponent {
   @Input() people: string[] = [];
-  @Output() favorite = new EventEmitter<string>();
+  @Input() favorite: string | null = null;
+  @Output() favoriteHandler = new EventEmitter<string>();
 }
