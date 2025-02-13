@@ -4,7 +4,10 @@
   <button (click)="addFriend()">Add friend</button>
 </div>
 <div class="favorite">
-  <p>My favorite people are: {{ favoritePeople }}</p>
+  <!-- <p>My favorite people are: {{ favoritePeople }}</p> -->
+    <app-favorite-people
+      [favoritePeople]="favoritePeople"
+    />
 </div>
 <div class="people">
   <!-- Add your people component here -->
