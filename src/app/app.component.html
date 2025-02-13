@@ -4,13 +4,13 @@
   <button (click)="addFriend()">Add friend</button>
 </div>
 <div class="favorite">
-  <p>My favorite person is: {{ favorite }}</p>
+  <p>My favorite people are: {{ favoritePeople }}</p>
 </div>
 <div class="people">
   <!-- Add your people component here -->
     <app-people
       [people]="people"
-      [favorite]="favorite"
+      [favoritePeople]="favoritePeople"
       (favoriteHandler)="setFavorite($event)"
       />
 </div>
